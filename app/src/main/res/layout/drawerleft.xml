@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/mDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                layout="@layout/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <ScrollView
+            android:background="@color/black"
+            android:id="@+id/scroll_side_menu"
+            android:layout_width="300dp"
+            
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+
+            android:choiceMode="singleChoice"
+            android:dividerHeight="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+
+                    android:padding="10dp"
+                    android:background="@color/red"
+                    android:id="@+id/rlProfile"
+
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/ivUser"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_account"/>
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/tvName"
+                        android:text="Akp"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:layout_toRightOf="@+id/ivUser"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_below="@+id/tvName"
+                        android:layout_toRightOf="@+id/ivUser"
+                        android:text="PrincySingh100@gmail.com"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rlDashBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp" 
+                        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Dashboard"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/rlNewRegistration"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_app_registration_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="New Registration"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/rlLoanRepayment"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_app_registration_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Loan Repayment"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+                <View android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+                <RelativeLayout android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/rlMemberDetails"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_app_registration_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Member Loan Details"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlDacument"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Document Verify"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlMemberMembership"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Registration form Membership"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+                <RelativeLayout
+                    android:id="@+id/rlMemberMembershipListDetail"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Membership Details"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+                <RelativeLayout android:visibility="gone"
+                    android:id="@+id/rlMemberloanLUC"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_perm_contact_calendar_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Member Loan LUC"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlMemberHousehold"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_edit_calendar_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Member Household"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMemberHouseholdReport"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_edit_calendar_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Member Household Report"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMemberloanApprisal"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_perm_contact_calendar_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Member Loan Appraisal"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMemberloanApprisalReport"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_perm_contact_calendar_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Loan Appraisal Report"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlaadharverify"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/kyc_aadhar" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Aadhar Verify "
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlcibilverify"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/kyc_aadhar" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Cibil Verify"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+
+                <RelativeLayout android:id="@+id/duereport_rl"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_assignment_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="EMI Due Report"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+
+                <RelativeLayout android:id="@+id/luc_rl"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/pdf" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Loan LUC Report"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+                <RelativeLayout android:id="@+id/demandseet_rl"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_edit_calendar_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Collection &amp; Demand Sheet"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_assignment_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Assign List"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/rlLogout"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_logout_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"
+                        android:text="Logout"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"  android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>

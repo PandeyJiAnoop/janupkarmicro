@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    android:layout_gravity="center"
+    tools:context=".UploadAddReceiptPicandSign">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="3dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp" android:textSize="15dp"
+        android:textAllCaps="true"
+        android:gravity="center_vertical" android:textStyle="bold"
+        android:text="This will be verified by Admin"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/aadhar_font_ll"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/kyc_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <ImageView   android:id="@+id/aadhar_font_img"
+                android:padding="10dp"
+                android:src="@drawable/kyc_upload"
+                android:layout_width="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent"></ImageView>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="Payment Received\nPicture"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="3dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp" android:textSize="16sp"
+            android:textAllCaps="true"
+            android:gravity="center_vertical" android:textStyle="bold"
+            android:text="Note:- Upload Image Less than 1MB"
+            android:textColor="@color/red" />
+
+        <LinearLayout android:id="@+id/aadhar_back_ll"
+            android:background="@drawable/kyc_rectangle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="120dp">
+            <ImageView android:id="@+id/aadhar_back_img"
+                android:padding="10dp"
+                android:src="@drawable/kyc_upload"
+                android:layout_width="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent"
+                ></ImageView>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="Receipt Sign\nPicture"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button android:id="@+id/submit"
+        android:backgroundTint="@color/red"
+        android:layout_width="match_parent"
+        android:text="Submit Documents"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_height="70dp">
+    </Button>
+
+</LinearLayout>

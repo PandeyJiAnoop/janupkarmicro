@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="2dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/edit_boarder"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content">
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/user_profile_img"
+                        android:layout_width="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="60dp"
+                        android:src="@drawable/person"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/tick_img"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitCenter"/>
+
+                </RelativeLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rl"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shiv Pandey"
+                            android:textColor="@color/black"
+
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:text="10:00 AM |Lucknow UP"
+                            android:textSize="13sp"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv5" android:textIsSelectable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:ellipsize="end"
+                        android:text="10:00 AM |Lucknow UP"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:textColor="@color/green"
+                        android:ellipsize="end"
+                        android:text="10:00 AM |Lucknow UP"
+                        android:textSize="14sp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bgg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:padding="5dp" android:textIsSelectable="true"
+                            android:textColor="#0490FF"
+                            android:text="ID No.-100582" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_gravity="end"
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textColor="#B00202"
+                        android:padding="5dp"
+                        android:elevation="10dp"
+                        android:background="@drawable/rectangle_white"
+                        android:text="Follow"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:visibility="gone"
+                android:id="@+id/collector_kyc_ll"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <Button android:id="@+id/submit"
+                    android:backgroundTint="@color/red"
+                    android:layout_width="match_parent"
+                    android:text="Upload Payment Recpt. &amp; Sign Pic"
+                    android:layout_height="wrap_content">
+
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

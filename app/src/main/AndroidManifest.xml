@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akp.janupkar">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+        android:exported="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/appicon"
+        android:keepScreenOn="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTop"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LokKalyan"
+        android:usesCleartextTraffic="true"
+        tools:node="merge">
+        <activity
+            android:name="com.akp.janupkar.a_webview.LoanLUCReportWebview"
+            android:exported="false" />
+        <activity
+            android:name="com.akp.janupkar.AllRegNewAPI.Reg_GuarantorDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.akp.janupkar.AllRegNewAPI.Reg_LoanDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.akp.janupkar.AllRegNewAPI.Reg_BasicDetails"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.AllRegNewAPI.RegistrtionForm"
+            android:exported="false" />
+        <activity android:name="com.akp.janupkar.membershipregistration.MemberLoan_AppraisalListFinalReportWebview" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberLoanAppraisalReport"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberhouseHoldNextWebview"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberLoanAppraisalWebview"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberLoanAppraisal"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberhouseHoldSecondWebview"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberHouseholdSecondReport"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.aadharcibil.CibilVerifyWebview"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.aadharcibil.AadharVerifyWebview"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.a_webview.MemberLUCWebview"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberhouseHoldWebview"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberloanLUC"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberHousehold"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.Demo"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.basic.CollectionDemandSeet"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.EMIDueReport"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.UploadAddReceiptPicandSign"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.a_webview.LoanApprovedList"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.CollectSecurityAmtList"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberShipDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberShipGurontorActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberShip"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.membershipregistration.MemberShipBasicRegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.customer.CustomerProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.customer.UnPaidEmiActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.customer.PaidCustomerListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.customer.CustomerloanlaistActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.customer.OTPVerify"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.customer.CustomerDashboard"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.dacument.GurantorTwoDacumentactivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.dacument.GurantoroneDacumentactivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.dacument.MemberDacumntsDetails"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.dacument.DacumentUploadActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.basic.EmiChartActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.basic.RepaymentDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.basic.RepaymentListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.basic.MemberLoanDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.login.BaiscDetails"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.login.GuarantorDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.login.LoanDeatilsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.basic.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.basic.Registration"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.basic.ForgotActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.login.WelcomActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.a_webview.RegistrationPageAdd"
+            android:exported="true"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name="com.akp.janupkar.a_webview.LoanRepaymentPageAdd"
+            android:exported="true"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name="com.akp.janupkar.basic.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.akp.janupkar.basic.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.akp.janupkar.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:node="merge" />
+        </provider>
+    </application>
+
+</manifest>

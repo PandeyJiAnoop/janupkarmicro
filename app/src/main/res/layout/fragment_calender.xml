@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+
+    tools:context=".fragment.CalenderFragment">
+
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:padding="5dp"
+            android:id="@+id/tvLoanId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:text="Filter By LOAN ID"/>
+        <Spinner
+            android:id="@+id/sp"
+            android:background="@drawable/rectangle_gradient_white"
+            android:layout_below="@+id/tvLoanId"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/grey"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"/>
+
+
+
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rcvDashBoard"            android:layout_margin="5dp"
+
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

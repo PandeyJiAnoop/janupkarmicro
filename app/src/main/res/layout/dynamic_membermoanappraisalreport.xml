@@ -1,0 +1,418 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:layout_margin="3dp">
+
+    <LinearLayout
+        android:background="@drawable/bgg"
+        android:padding="10dp"
+        android:id="@+id/live_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:layout_gravity="end"
+            android:id="@+id/approved_luc_tv"
+            android:background="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:text="Click here to Fill Form"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="12sp"
+
+            android:textColor="@color/white"
+
+            android:layout_height="match_parent">
+        </TextView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="#FFE9E9"
+                android:padding="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:text="S.No."
+                    android:gravity="center_vertical"
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Loan No"
+                    android:gravity="center_vertical"
+
+                    android:textStyle="bold"
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Branch"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/sr_no"
+                    android:layout_width="100dp"
+
+                    android:text=""
+                    android:gravity="center_vertical"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout                 android:background="#FFE9E9"
+
+                android:padding="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Reg.Date"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Customer Name"
+                    android:gravity="center_vertical"
+
+                    android:textStyle="bold"
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Loan plan"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="100dp"
+
+                    android:text="66666666"
+                    android:gravity="center_vertical"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv3"
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout                 android:background="#FFE9E9"
+
+                android:padding="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Loan Amount"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Loan Type"
+                    android:gravity="center_vertical"
+
+                    android:textStyle="bold"
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Status"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="100dp"
+
+                    android:text="66666666"
+                    android:gravity="center_vertical"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv6"
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout                 android:background="#FFE9E9"
+
+                android:padding="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Installment mode"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Calculation Method"
+                    android:gravity="center_vertical"
+
+                    android:textStyle="bold"
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="No of Installment"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="100dp"
+
+                    android:text="66666666"
+                    android:gravity="center_vertical"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv9"
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="11dp">
+
+    </View>
+
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enterCode"
+        android:textSize="21dp"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tvMobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/purple_500"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/etCode1"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:textColor="@color/red"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/etCode2"
+            android:maxLength="1"
+            android:gravity="center"
+            android:elevation="5dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:background="@drawable/rectangle_white"
+            />
+
+        <EditText
+            android:id="@+id/etCode2"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:textColor="@color/red"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/etCode3"
+            android:maxLength="1"
+            android:gravity="center"
+            android:elevation="5dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:background="@drawable/rectangle_white"
+            />
+
+        <EditText
+            android:id="@+id/etCode3"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:textColor="@color/red"
+            android:layout_centerVertical="true"
+            android:maxLength="1"
+            android:gravity="center"
+            android:elevation="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/view"
+            android:inputType="number"
+            android:singleLine="true"
+            android:background="@drawable/rectangle_white"
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/etCode4"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:textColor="@color/red"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:elevation="5dp"
+            android:layout_toRightOf="@+id/view"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:background="@drawable/rectangle_white"
+            />
+
+        <EditText
+            android:id="@+id/etCode5"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:textColor="@color/red"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:elevation="5dp"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/etCode4"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:background="@drawable/rectangle_white"
+           />
+
+        <EditText
+            android:id="@+id/etCode6"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:textColor="@color/red"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:elevation="5dp"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/etCode5"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:background="@drawable/rectangle_white"
+          />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+       />
+
+
+</LinearLayout>

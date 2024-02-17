@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Janupkar</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="permission_message">Allow Permissions</string>
+    <string name="ok">Ok</string>
+    <string name="comma">,</string>
+    <string name="cancel">Cancel</string>
+    <string name="aresurelogout">Are you sure you want to log out?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="listing">Listing Data</string>
+    <string name="newVersion">Update to the latest Version</string>
+    <string name="update">Update</string>
+    <string name="submit">Submit</string>
+    <string name="enterCode">Enter the Code that was send to</string>
+
+
+    <string-array name="array_cat">
+        <item>Propritor</item>
+        <item>Patnership</item>
+        <item>Company</item>
+        <item>Manufacturing</item>
+        <item>Shop</item>
+        <item>Service</item>
+
+    </string-array>
+
+    <string-array name="array_buss">
+        <item>Office</item>
+        <item>Shop</item>
+    </string-array>
+
+
+    <string-array name="array_emp">
+        <item>Testing fields Officers~EMP0015</item>
+        <item>Pawan Kumar~EMP0017</item>
+    </string-array>
+
+
+</resources>
